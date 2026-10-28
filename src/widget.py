@@ -5,7 +5,7 @@ def mask_account_card(account_info: str) -> str:
     # Разбиваем на части
     parts = account_info.split()
 
-   # Определяем, где название, где номер
+    # Определяем, где название, где номер
     number = parts[-1]
     name = " ".join(parts[:-1])
 
@@ -18,7 +18,10 @@ def mask_account_card(account_info: str) -> str:
     # Склеиваем все вместе
     return name + " " + masked
 
+
 """ Функция, которая выводит дату """
+
+
 def get_date(date: str) -> str:
     # Разбиваем на время и дату
     date_time = date.split("T")
